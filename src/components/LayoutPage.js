@@ -29,7 +29,7 @@ const LayoutPage = ({ section, children }) => {
                     <Menu.Item onClick={goSection} key="/home" icon={<HomeOutlined />}>
                         Home
                     </Menu.Item>
-                    <Menu.Item onClick={goSection} key="2" icon={<FlagOutlined />}>
+                    <Menu.Item onClick={goSection} key="/about-germany" icon={<FlagOutlined />}>
                         Acerca de Alemania
                     </Menu.Item>
                     <Menu.Item onClick={goSection} key="/groups" icon={<GroupOutlined />}>
@@ -38,16 +38,16 @@ const LayoutPage = ({ section, children }) => {
                     <Menu.Item onClick={goSection} key="/countries" icon={<PartitionOutlined />}>
                         Paises
                     </Menu.Item>
-                    <Menu.Item onClick={goSection} key="5" icon={<CalendarOutlined />}>
+                    <Menu.Item onClick={goSection} key="/calendar" icon={<CalendarOutlined />}>
                         Calendario
                     </Menu.Item>
-                    <Menu.Item onClick={goSection} key="6" icon={<QuestionCircleOutlined />}>
+                    <Menu.Item onClick={goSection} key="/mexico-en-el-mundial" icon={<QuestionCircleOutlined />}>
                         México en el mundial
                     </Menu.Item>
-                    <Menu.Item onClick={goSection} key="7" icon={<DoubleLeftOutlined />}>
+                    <Menu.Item onClick={goSection} key="/history" icon={<DoubleLeftOutlined />}>
                         Historia
                     </Menu.Item>
-                    <Menu.Item onClick={goSection} key="8" icon={<ExperimentOutlined />}>
+                    <Menu.Item onClick={goSection} key="/legends" icon={<ExperimentOutlined />}>
                         Leyendas
                     </Menu.Item>
                 </Menu>
