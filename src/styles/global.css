@@ -1,3 +1,15 @@
+@import '~antd/dist/antd.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.bg_home{
+    background-image: linear-gradient(to right bottom, #3c3d31, #3c392d, #3c352b, #3b3129, #3a2d28, #352825, #302423, #2a2020, #211a1a, #191414, #0f0b0c, #000000);
+}
+
+.glass{
+    background-color: #ffffff44;
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+}
