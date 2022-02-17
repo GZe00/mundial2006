@@ -5,7 +5,7 @@ import Seo from '../components/seo'
 const homePage = () => {
     return (
         <>
-        <Seo title="Home" />
+            <Seo title="Home" />
             <LayoutPage section={"/home"}>
                 Aqui pertenece el home
             </LayoutPage>
