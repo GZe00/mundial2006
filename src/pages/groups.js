@@ -1,17 +1,49 @@
 import React from 'react'
 import LayoutPage from '../components/LayoutPage'
 import Seo from '../components/seo'
+import { getGroups } from '../api/content'
+import CardGroup from "../components/CardGroup"
+
+
 
 const Groups = () => {
 
 
 
+  const [grupos, setGrupos] = React.useState()
+
+  React.useEffect(() => {
+    getGroups().then(response => {
+      if (response) {
+        setGrupos(response.sort((a,b) => (a.name > b.name) ? 1 : -1))
+      }
+    })
+  }, []);
+
+
+
+
   return (
     <>
-    <Seo title="Grupos" />
-    <LayoutPage section={"/groups"}>
-      Grupos de la primera
-    </LayoutPage>
+      <Seo title="Grupos" />
+      <LayoutPage section={"/groups"}>
+        Grupos de la primera
+        <div className='flex w-full flex-wrap justify-center'>
+          {
+            grupos ?
+              grupos.map((group, key) => {
+                return <div key={key} className='flex mx-12 my-6'>
+                  <CardGroup
+                    grupo={group.name}
+                    paises={group.pais}
+                  />
+                </div>
+              })
+              : null
+          }
+        </div>
+
+      </LayoutPage>
 
     </>
   )
