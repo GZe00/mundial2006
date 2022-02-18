@@ -1,5 +1,5 @@
 
-const server = "http://localhost:1337"
+const server = process.env.SERVER
 
 const getGroups = () => {
     return new Promise((resolve, reject) => {

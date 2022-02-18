@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `Mundial 2006`,
@@ -18,12 +22,14 @@ module.exports = {
       options: {
         "icon": "src/images/icon.png"
       }
-    }, {
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
         "path": "./src/images/"
       },
+      
       __key: "images"
     }]
 };
