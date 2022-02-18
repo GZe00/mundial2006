@@ -1,4 +1,4 @@
-import {config} from "../config"
+import config from "../config"
 
 const getGroups = () => {
     return new Promise((resolve, reject) => {
