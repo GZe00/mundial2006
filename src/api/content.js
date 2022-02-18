@@ -1,5 +1,4 @@
-
-const server = process.env.SERVER
+import {server} from "../config"
 
 const getGroups = () => {
     return new Promise((resolve, reject) => {

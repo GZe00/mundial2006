@@ -1,6 +1,6 @@
 import { navigate } from 'gatsby'
 import React from 'react'
-const server = "http://localhost:1337"
+import {server} from "../config"
 
 const CardGroup = ({ grupo, paises }) => {
 
