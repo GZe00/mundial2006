@@ -1,6 +1,6 @@
 import { navigate } from 'gatsby'
 import React from 'react'
-import {server} from "../config"
+import {config} from "../config"
 
 const CardGroup = ({ grupo, paises }) => {
 
@@ -18,7 +18,7 @@ const CardGroup = ({ grupo, paises }) => {
             {
               paises.map((pais, key) => {
                 return <div key={key} className='items-center mx-3 flex flex-col' style={{ width: "80px", height: "84px" }}>
-                  <img className='rounded-full object-cover' style={{ width: '32px', height: "32px" }} src={`${server}${pais.bandera.url}`} />
+                  <img className='rounded-full object-cover' style={{ width: '32px', height: "32px" }} src={`${config.server}${pais.bandera.url}`} />
                   <p className='mb-0'>{pais.nombre}</p>
                 </div>
               })

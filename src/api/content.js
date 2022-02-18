@@ -1,8 +1,8 @@
-import {server} from "../config"
+import {config} from "../config"
 
 const getGroups = () => {
     return new Promise((resolve, reject) => {
-        fetch(`${server}/grupos`).then(response => {
+        fetch(`${config.server}/grupos`).then(response => {
             if (response.ok) {
                 response.json().then(data => {
                     resolve(data)
