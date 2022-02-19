@@ -4,7 +4,7 @@ import config from "../config"
 
 const CardGroup = ({ grupo, paises }) => {
 
-  const goGroup = () => navigate(`/gruop/${grupo}`)
+  const goGroup = () => navigate(`/gruop/${grupo.toLowerCase()}`)
 
   return (
     <>
