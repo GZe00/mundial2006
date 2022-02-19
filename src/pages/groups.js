@@ -14,9 +14,7 @@ const Groups = () => {
 
   React.useEffect(() => {
     getGroups().then(response => {
-      if (response) {
-        setGrupos(response.sort((a,b) => (a.name > b.name) ? 1 : -1))
-      }
+      if (response) setGrupos(response.sort((a,b) => (a.grupo > b.grupo) ? 1 : -1))
     })
   }, []);
 
@@ -32,9 +30,10 @@ const Groups = () => {
           {
             grupos ?
               grupos.map((group, key) => {
+                console.log(group)
                 return <div key={key} className='flex mx-12 my-6'>
                   <CardGroup
-                    grupo={group.name}
+                    grupo={group.grupo}
                     paises={group.pais}
                   />
                 </div>
