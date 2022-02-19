@@ -18,7 +18,7 @@ const CardGroup = ({ grupo, paises }) => {
             {
               paises.map((pais, key) => {
                 return <div key={key} className='items-center mx-3 flex flex-col' style={{ width: "80px", height: "84px" }}>
-                  <img className='rounded-full object-cover' style={{ width: '32px', height: "32px" }} src={`${config.server}${pais.bandera.url}`} />
+                  <img className='rounded-full object-cover' style={{ width: '32px', height: "32px" }} src={`${config.server}${pais.bandera.url}`} alt={`Bandera de ${pais.bandera.alternativeText}`} />
                   <p className='mb-0'>{pais.nombre}</p>
                 </div>
               })
