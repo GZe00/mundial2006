@@ -25,12 +25,13 @@ const Groups = () => {
     <>
       <Seo title="Grupos" />
       <LayoutPage section={"/groups"}>
-        Grupos de la primera
+        
+        Grupos
+
         <div className='flex w-full flex-wrap justify-center'>
           {
             grupos ?
               grupos.map((group, key) => {
-                console.log(group)
                 return <div key={key} className='flex mx-12 my-6'>
                   <CardGroup
                     grupo={group.grupo}
