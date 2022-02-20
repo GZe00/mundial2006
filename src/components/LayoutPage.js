@@ -53,7 +53,7 @@ const LayoutPage = ({ section, children }) => {
                 </Menu>
             </Header>
             <Layout className="site-layout">
-                <Content className='overflow-y-auto' style={{ margin: '24px 16px 0'}}>
+                <Content className='overflow-y-auto overflow-x-hidden' style={{ margin: '24px 16px 0'}}>
                     <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
                         <br />
                         {children}
