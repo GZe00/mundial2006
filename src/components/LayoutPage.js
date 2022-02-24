@@ -11,8 +11,9 @@ import {
     QuestionCircleOutlined,
 } from '@ant-design/icons';
 import { navigate } from 'gatsby';
+import config from '../config';
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Content, Footer } = Layout;
 
 const LayoutPage = ({ section, children }) => {
 
@@ -60,7 +61,10 @@ const LayoutPage = ({ section, children }) => {
                         <br />
                     </div>
                 </Content>
-                <Footer style={{ textAlign: 'center' }}>Alemania ©2006 Creado por @Zet_MFA</Footer>
+                <Footer style={{ textAlign: 'center' }}>
+                        <p className="mb-0 -my-4 cursor-default">Alemania ©2006 Creado por <a className="cursor-pointer" href="https://twitter.com/zet_mfa" target="_blank">@Zet_MFA</a></p>
+                        <p className="mb-0 -my-4 font-semibold text-zinc-600 italic text-right">{config.version}</p>
+                </Footer>
             </Layout>
         </Layout>
     )
