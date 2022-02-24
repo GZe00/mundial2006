@@ -8,17 +8,15 @@ const IndexPage = () => {
 
   const [yearCurrent] = React.useState((new Date()).getFullYear());
 
-  const start = e => {
-    console.log(e)
-    navigate("/home")
-  }
+  const start = e => navigate("/home")
+  
 
   return (
     <>
       <Seo title={"Bienvenida"} />
       <div className="w-full h-screen flex">
         <div className="w-2/5">
-          <StaticImage class="w-full h-screen" src="../images/bg-home.jpg" alt="Estadio Berlín" objectFit="cover" />
+          <StaticImage className="w-full h-screen" src="../images/bg-home.jpg" alt="Estadio Berlín" objectFit="cover" />
         </div>
         <div className="bg_home w-3/5 flex flex-col justify-center items-center" style={{ height: "100%" }}>
           <div className="glass mx-3 md:mx-8 py-10 px-6 md:p-8 lg:p-12 rounded-md">
