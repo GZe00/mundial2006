@@ -101,7 +101,7 @@ const Country = ({ location }) => {
               </div>
               <div className="w-2/5 flex justify-center items-center px-4" style={{ height: "100%" }}>
                 <div className="object-contain w-max flex items-center justify-center" style={{height: "auto", borderRadius: "15px"}}>
-                  <StaticImage src="../../images/test.jpg" layout="fixed" width={200} height={200} alt="Prueba de test" />
+                  <StaticImage src="../../images/test.jpg" layout="fixed" width={320} height={200} alt="Prueba de test" />
                 </div>
               </div>
             </div>
