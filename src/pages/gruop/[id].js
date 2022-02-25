@@ -5,6 +5,7 @@ import { getGroup } from "../../api/content"
 import { HiOutlineArrowCircleLeft } from "@react-icons/all-files/hi/HiOutlineArrowCircleLeft"
 import { navigate } from 'gatsby'
 import { Carousel } from 'antd'
+import { HomeOutlined } from '@ant-design/icons'
 const contentStyle = {
   height: '256px',
   color: '#fff',
@@ -34,7 +35,7 @@ const Group = ({ location }) => {
       <LayoutPage section={"/groups"}>
         <div className='flex items-center w-max' onClick={() => navigate("/groups")}>
           <HiOutlineArrowCircleLeft className='cursor-pointer text-gray-500' size={20} />
-          <p className='cursor-pointer ml-2 mb-0 font-semibold text-gray-500 '>/grupos/grupo/{loc}</p>
+          <p className='cursor-pointer ml-2 mb-0 font-semibold text-gray-500 items-center flex'>{<HomeOutlined />}/Grupos/Grupo/{loc.toUpperCase()}</p>
         </div>
         <Carousel autoplay style={{ width: "100%", height: "256px" }}>
           
