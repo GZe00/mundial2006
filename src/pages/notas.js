@@ -7,7 +7,7 @@ const Notas = () => {
     const [yearCurrent] = React.useState((new Date()).getFullYear());
     return (
         <>
-        <Seo title={"Notas"} />
+            <Seo title={"Notas"} />
             <LayoutPage>
                 <Title style={{ marginBottom: "0px" }} level={2}>Sección de notas</Title>
                 <Title style={{ marginTop: "0px" }} level={5}>...y descripción de cada actualización</Title>
@@ -101,7 +101,18 @@ const Notas = () => {
                                 Llegados a este punto, debería comenzar a hacer commits para tener un historial descriptivo
                             </Text>
                         </Col>
-
+                        <Col span={24} align={"start"}>
+                            <hr className="my-4" />
+                            <Text strong>
+                                -Versión 0.0.8: <Text style={{ fontWeight: "normal" }}>
+                                    Sección Home, presentación
+                                </Text>
+                                <br/>
+                                <Text>
+                                    Se agrega el proyecto a repositorio GitHub
+                                </Text>
+                            </Text>
+                        </Col>
                     </Row>
                 </div>
             </LayoutPage>

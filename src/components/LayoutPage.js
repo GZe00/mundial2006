@@ -24,9 +24,9 @@ const LayoutPage = ({ section, children }) => {
 
     return (
         <Layout className='h-screen'>
-            <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
+            <Header style={{ position: 'fixed', zIndex: 20, width: '100%' }}>
                 <div className="logo"></div>
-                <Menu theme="dark" mode="horizontal" selectedKeys={`${[section]}`}>
+                <Menu style={{zIndex: 40}} theme="dark" mode="horizontal" selectedKeys={`${[section]}`}>
                     <Menu.Item onClick={goSection} key="/home" icon={<HomeOutlined />}>
                         Home
                     </Menu.Item>
@@ -53,8 +53,8 @@ const LayoutPage = ({ section, children }) => {
                     </Menu.Item>
                 </Menu>
             </Header>
-            <Layout className="site-layout">
-                <Content className='overflow-y-auto overflow-x-hidden' style={{ margin: '24px 16px 0'}}>
+            <Layout className="site-layout" style={{zIndex: 0}}>
+                <Content className='overflow-y-auto overflow-x-hidden' style={{ margin: '24px 16px 0', zIndex: 0}}>
                     <div className="site-layout-background" style={{ padding: 24, textAlign: 'center', height: "100%"}}>
                         <br />
                         {children}
