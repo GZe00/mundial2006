@@ -55,7 +55,7 @@ const LayoutPage = ({ section, children }) => {
             </Header>
             <Layout className="site-layout">
                 <Content className='overflow-y-auto overflow-x-hidden' style={{ margin: '24px 16px 0'}}>
-                    <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
+                    <div className="site-layout-background" style={{ padding: 24, textAlign: 'center', height: "100%"}}>
                         <br />
                         {children}
                         <br />
@@ -63,7 +63,7 @@ const LayoutPage = ({ section, children }) => {
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>
                         <p className="mb-0 -my-4 cursor-default">Alemania ©2006 Creado por <a className="cursor-pointer" href="https://twitter.com/zet_mfa" target="_blank">@Zet_MFA</a></p>
-                        <p className="mb-0 -my-4 font-semibold text-zinc-600 italic text-right">{config.version}</p>
+                        <p onClick={() => navigate("/notas")} className="mb-0 -my-4 font-semibold text-zinc-600 italic text-right cursor-pointer">{config.version}</p>
                 </Footer>
             </Layout>
         </Layout>

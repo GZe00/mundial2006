@@ -1,5 +1,5 @@
 const config = {
-    version: "v0.0.6",
+    version: "v0.0.7",
     server: process.env.SERVER
 
 }
